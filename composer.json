@@ -1,0 +1,30 @@
+{
+    "name": "hxsen/web-test",
+    "description": "Run test cases on the web",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "houxin",
+            "email": "hx@hxsen.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hxsen\\WebTest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hxsen\\WebTest\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hxsen\\WebTest\\WebUrlServiceProvider"
+            ]
+        }
+    }
+}
